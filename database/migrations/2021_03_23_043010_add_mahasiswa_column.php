@@ -14,8 +14,8 @@ class AddMahasiswaColumn extends Migration
     public function up()
     {
         Schema::table('mahasiswa', function (Blueprint $table) {
-            $table->string('e-mail')->after('name')->nullable();
-            $table->string('tgl-lahir')->after('no_handphone')->nullable();
+            $table->string('e_mail')->after('name')->nullable();
+            $table->string('tgl_lahir')->after('no_handphone')->nullable();
         });
     }
 
@@ -27,8 +27,8 @@ class AddMahasiswaColumn extends Migration
     public function down()
     {
         Schema::table('mahasiswa', function (Blueprint $table) {
-            $table->dropColumn('e-mail');
-            $table->dropColumn('tgl-lahir');
+            $table->dropColumn('e_mail');
+            $table->dropColumn('tgl_lahir');
         });
     }
 }

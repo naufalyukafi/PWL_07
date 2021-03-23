@@ -20,7 +20,7 @@ class Mahasiswa extends Model
         'kelas',
         'jurusan',
         'no_handphone',
-        'e-mail',
-        'tgl-lahir'
+        'e_mail',
+        'tgl_lahir'
     ];
 }
