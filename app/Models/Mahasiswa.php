@@ -19,6 +19,8 @@ class Mahasiswa extends Model
         'name',
         'kelas',
         'jurusan',
-        'no_handphone'
+        'no_handphone',
+        'e-mail',
+        'tgl-lahir'
     ];
 }
