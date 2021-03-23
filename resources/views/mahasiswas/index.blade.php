@@ -26,7 +26,7 @@
     <th>No_Handphone</th>
     <th width="280px">Action</th>
 </tr>
-@foreach ($mahasiswas as $Mahasiswa)
+@foreach ($posts as $Mahasiswa)
 <tr>
     <td>{{ $Mahasiswa->nim }}</td>
     <td>{{ $Mahasiswa->name }}</td>
@@ -46,5 +46,8 @@
     </td>
 </tr>
 @endforeach
-    </table>
+</table>
+<div class="d-flex float-right">
+    {{$posts->links('pagination::bootstrap-4')}}
+</div>
 @endsection
