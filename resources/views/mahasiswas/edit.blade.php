@@ -22,23 +22,23 @@
         @method('PUT')
             <div class="form-group">
                 <label for="nim">Nim</label>
-                <input type="text" name="nim" class="formcontrol" id="nim" value="{{ $Mahasiswa->nim }}" ariadescribedby="Nim" >
+                <input type="text" name="nim" class="form-control" id="nim" value="{{ $Mahasiswa->nim }}" ariadescribedby="Nim" >
             </div>
             <div class="form-group">
                 <label for="name">Nama</label>
-                <input type="text" name="name" class="formcontrol" id="name" value="{{ $Mahasiswa->name }}" ariadescribedby="name" >
+                <input type="text" name="name" class="form-control" id="name" value="{{ $Mahasiswa->name }}" ariadescribedby="name" >
             </div>
             <div class="form-group">
                 <label for="kelas">Kelas</label>
-                <input type="kelas" name="kelas" class="formcontrol" id="kelas" value="{{ $Mahasiswa->kelas }}" ariadescribedby="kelas" >
+                <input type="kelas" name="kelas" class="form-control" id="kelas" value="{{ $Mahasiswa->kelas }}" ariadescribedby="kelas" >
             </div>
             <div class="form-group">
                 <label for="jurusan">Jurusan</label>
-                <input type="jurusan" name="jurusan" class="formcontrol" id="jurusan" value="{{ $Mahasiswa->jurusan }}" ariadescribedby="jurusan" >
+                <input type="jurusan" name="jurusan" class="form-control" id="jurusan" value="{{ $Mahasiswa->jurusan }}" ariadescribedby="jurusan" >
             </div>
             <div class="form-group">
                 <label for="no_handphone">No_Handphone</label>
-                <input type="no_handphone" name="no_handphone" class="formcontrol" id="no_handphone" value="{{ $Mahasiswa->no_handphone }}" ariadescribedby="no_handphone" >
+                <input type="no_handphone" name="no_handphone" class="form-control" id="no_handphone" value="{{ $Mahasiswa->no_handphone }}" ariadescribedby="no_handphone" >
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
