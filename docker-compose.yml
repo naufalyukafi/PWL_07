@@ -1,0 +1,34 @@
+version: "1"
+services:
+  app:
+    image: naufalyukafi/cloud-kuis2:latest
+    container_name: app
+    restart: unless-stopped
+    tty: true
+    depends_on:
+      - cache
+    networks:
+      - app-network
+
+  web_server:
+    image: naufalyukafi/cloud-kuis2-web_server:latest
+    container_name: web_server
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8020:80"
+    depends_on:
+      - app
+    networks:
+      - app-network
+
+  cache:
+    image: redis:alpine
+    container_name: cache
+    restart: unless-stopped
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
